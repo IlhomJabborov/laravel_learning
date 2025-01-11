@@ -1,71 +1,59 @@
-<<<<<<< HEAD
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Laravel Loyihasi
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+[![Laravel Version](https://img.shields.io/badge/Laravel-8.x-orange.svg)](https://laravel.com/docs/8.x)
+[![PHP Version](https://img.shields.io/badge/PHP-7.x|8.x-blue.svg)](https://www.php.net/)
 
-## About Laravel
+## Loyihaning Maqsadi
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Ushbu loyiha [Laravel](https://laravel.com/) frameworkidan foydalangan holda yaratilgan. Ushbu loyiha **[meni veb ilovalar fanidan mustaqil ishm]** (dastur,kirish va ro'yxatdan o'tishni blade va api orqali) taqdim etish uchun mo'ljallangan.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Foydalanish Talablari
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Texnik Talablar:
 
-## Learning Laravel
+- PHP >= 7.4
+- Composer
+- MySQL yoki boshqa SQL ma'lumotlar bazasi (men SQLite ishlatdim)
+- Laravel 8.x
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Klonlash va O'rnatish
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Loyihani GitHub-dan klonlash uchun quyidagi buyruqdan foydalaning:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+```bash
+https://github.com/IlhomJabborov/laravel_learning.git
+```
+### Ushbu direktoriyaga kirish:
+```
+cd laravel_learning
+```
+### composer yordamida kerakli bog'lanishlarni o'rnatish:
+```
+composer install
+```
+### .env faylini yaratish:
+```
+cp .env.example .env
+```
+* Ma'lumotlar bazasi konfiguratsiyasini .env faylida to'ldiring.
+### Ma'lumotlar bazasini o'rnatish :
+```
+php artisan migrate
+```
+### Ushbu loyihani ishlatish :
+```
+php artisan serve
+```
+#### Brauzeringizda **http://localhost:8000** manziliga kiring.
+## Loyiha Tuzilishi
+* app/ — Biznes mantiq va modellar.
+* database/ — Migratsiyalar va funksiyalar.
+* resources/ — Ko'rinishlar va dizayn.
+* routes/ — Yo'llar.
+* config/ — Loyihaning konfiguratsiya fayllari.
+* public/ — Ochiq resurslar (CSS, JavaScript, rasm fayllari).
 
-## Laravel Sponsors
+## Muallif
+* Ilhom Jabborov
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-=======
-# laravel_learning
-To'liq Readme faylini keyin yozaman.
->>>>>>> 37bac74d85e659f4f162be11f343b443152c4c5b
+### 2024
