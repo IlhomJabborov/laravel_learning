@@ -23,6 +23,11 @@ class Scontroller extends Controller
         return view('index');
     }
 
+    public function apidocs()
+    {
+        return view('apidocs');
+    }
+
     public function home()
     {
         $users = Suser::orderBy('created_at', 'desc')->get();

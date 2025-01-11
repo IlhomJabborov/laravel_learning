@@ -2,6 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>Ilhom Jabborov</title>
   <link rel="stylesheet" href="{{asset('assets/style.css')}}">
 
@@ -23,6 +24,7 @@
           @csrf
           <h2 class="form_title title">Hisob yaratish</h2>
           <input class="form__input" type="text" placeholder="Ism" name ="name" required>
+          <input type="hidden" name="_token" value="{{ csrf_token() }}" />
           <input class="form__input" type="email" placeholder="Elektron pochta manzili" name = "email" required>
           <input class="form__input" type="password" placeholder="Parol" name = "password" required>
           <input class="form__input" type="password" name="password_confirmation" placeholder="Parolni tasdiqlash" required>
@@ -35,6 +37,7 @@
         <form class="form" id="b-form" method="POST" action="{{ route('login.submit') }}">
           @csrf
           <h2 class="form_title title">Veb-saytga kiring</h2>
+          <input type="hidden" name="_token" value="{{ csrf_token() }}" />
           <input class="form__input" type="email" placeholder="Elektron pochta manzili" name = "email" required>
           <input class="form__input" type="password" placeholder="Parol" name = "password" required>
           <button type="submit" class="button">TIZIMGA KIRISH</button>

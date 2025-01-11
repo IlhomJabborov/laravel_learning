@@ -8,6 +8,7 @@
     
     <!-- Mobile Meta -->
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     
     <!-- Site Meta -->
     <title>Ilhom Jabborov</title>
@@ -35,7 +36,7 @@
                     <p style="all: unset; color: white;">Blade dan ham API dan ham amalga oshirish talab qilinadi</p> <br><br>
                     <div class="btn-wrapper">
                         <div class="text-center">
-                            <a href="{{ route('reglog') }}" class="btn btn-primary">Blade</a> &nbsp;<a href="#" class="btn btn-default">API </a>
+                            <a href="{{ route('reglog') }}" class="btn btn-primary">Blade</a> &nbsp;<a href="{{ route('apidocs') }}" class="btn btn-default">API </a>
                         </div>
                     </div>
                 </div>

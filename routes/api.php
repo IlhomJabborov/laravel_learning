@@ -1,9 +1,9 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Acontroller;
+use App\Http\Controllers\ApiController;
 
-Route::post('/register', [Acontroller::class, 'apiRegister']);
-Route::post('/login', [Acontroller::class, 'apiLogin']);
-Route::post('/logout', [Acontroller::class, 'apiLogout']);
-Route::get('/users', [Acontroller::class, 'apiGetUsers']);
+// API marshrutlari
+Route::post('/register', [ApiController::class, 'apiRegister']);
+Route::post('/login', [ApiController::class, 'apiLogin']);
+Route::post('/logout', [ApiController::class, 'apiLogout']);
+Route::get('/users', [ApiController::class, 'apiGetUsers']);
